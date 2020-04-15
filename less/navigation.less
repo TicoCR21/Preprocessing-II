@@ -1,1 +1,57 @@
 // Navigation Styles here
+header
+{
+    .top_container
+    {
+        border-bottom: 2px dashed @navigation-border;
+
+        .title_nav
+        {
+            height: 80px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+            @media @cell
+            {
+                flex-direction: column;
+            }
+
+            h1
+            {
+                flex-basis: 25%;
+                color: @font-color;
+
+                @media @cell
+                {
+                    margin-top: 8px;
+                }
+            }
+
+            ul
+            {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-basis: 100%;
+
+                li
+                {
+                    padding: 5px 20px;
+                    
+                    a
+                    {
+                        color: @font-color;
+                        font-size: 1.6rem;
+                        text-decoration: none;
+
+                        &:hover
+                        {
+                            color: @sandy-beach;
+                        }
+                    }
+                }            
+            }
+        }
+    }
+}
