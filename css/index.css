@@ -205,6 +205,9 @@ header .top_container .title_nav ul li a {
   font-size: 1.6rem;
   text-decoration: none;
 }
+header .top_container .title_nav ul li a:hover {
+  color: #FFEBCD;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -259,6 +262,10 @@ header .top_container .title_nav ul li a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  transition: all 2s ease-in;
+}
+.home .content-section .img-content img:hover {
+  transform: scale(1.1) skew(3deg);
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -318,9 +325,13 @@ header .top_container .title_nav ul li a {
   background-color: rgba(0, 134, 82, 0.793);
   border-radius: 15px;
   padding: 14px 30px;
+  transition: all 1s;
 }
 @media ( max-width:500px ) {
   .home .content-pick .destination .btn {
     font-size: 1.5rem;
   }
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #212529;
 }
