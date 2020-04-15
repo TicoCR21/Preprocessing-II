@@ -1,5 +1,10 @@
 .home 
 {
+  @media @cell
+  {
+   width: 90%;
+  }
+
   .content-header
   {
     margin: 20px 0;
@@ -17,16 +22,32 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @cell
+    {
+      flex-direction: column;
+    }
    
     
-    .text-content {
+    .text-content 
+    {
       width: 48%;
       padding-right: 1%;
+
+      @media @cell
+      {
+        width: 100%;
+      }
     }
 
-    .img-content {
+    .img-content 
+    {
       width: 48%;
       padding-left: 1%;
+
+      @media @cell
+      {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -37,6 +58,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @cell
+    {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -53,6 +80,11 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @cell
+    {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -64,14 +96,30 @@
     display: flex;
     justify-content: space-between;
 
+    @media @cell
+    {
+      flex-direction: column;
+    }
+
     .destination 
     {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media @cell
+      {
+        width: 80%;
+        margin: 0 auto 25px;
+      }
 
       .btn
       {
         .btn( @font_color: white );
+        
+        @media @cell
+        {
+          font-size: 1.5rem;
+        }
       }
     }
   }

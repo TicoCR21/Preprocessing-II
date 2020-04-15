@@ -12,10 +12,20 @@ header
             display: flex;
             align-items: center;
 
+            @media @cell
+            {
+                flex-direction: column;
+            }
+
             h1
             {
                 flex-basis: 25%;
                 color: @font-color;
+
+                @media @cell
+                {
+                    margin-top: 8px;
+                }
             }
 
             ul
